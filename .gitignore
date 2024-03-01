@@ -1,25 +1,73 @@
-# CakePHP 3
+# XAMPP specific files
+/xampp-control*
+/apache_start.bat
+/apache_stop.bat
+/mysql_start.bat
+/mysql_stop.bat
+/mercury_start.bat
+/mercury_stop.bat
+/tomcat_start.bat
+/tomcat_stop.bat
+/filezilla_start.bat
+/filezilla_stop.bat
+/*.bat
+/*.txt
+/*.ini
+/*.exe
+/properties.ini
+/README.*
 
-/vendor/*
-/config/app.php
+# Server logs
+/apache/logs/*
+/mysql/data/*
+/php/logs/*
 
-/tmp/cache/models/*
+# Temp files
+/tmp/*
 !/tmp/cache/models/empty
-/tmp/cache/persistent/*
 !/tmp/cache/persistent/empty
-/tmp/cache/views/*
 !/tmp/cache/views/empty
-/tmp/sessions/*
 !/tmp/sessions/empty
-/tmp/tests/*
 !/tmp/tests/empty
 
-/logs/*
-!/logs/empty
+# Operating system generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
 
-# CakePHP 2
+# MediaWiki specific directories to exclude
+# Uploaded files
+/htdocs/mywiki/images/
+
+# Cached files
+/htdocs/mywiki/cache/
+/htdocs/mywiki/sessions/
+/htdocs/mywiki/languages/cache/
+
+# Compiled assets
+/htdocs/mywiki/resources/assets/
+
+# LocalSettings and other configuration files
+/htdocs/mywiki/LocalSettings.php
+/htdocs/mywiki/AdminSettings.php
+
+# CakePHP specific
+/vendor/*
+/config/app.php
 
 /app/tmp/*
 /app/Config/core.php
 /app/Config/database.php
 /vendors/*
+
+# If you're using a virtual environment for PHP, exclude it
+/phpmyadmin/tmp/*
+
+# Logs directory
+/logs/*
+!/logs/empty
+
